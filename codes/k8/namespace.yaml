@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: nimc-app
+  labels:
+    name: nimc-app
+    environment: production
+    app: nimc-login-app

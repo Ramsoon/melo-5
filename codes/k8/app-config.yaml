@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: nimc-app
+data:
+  app-port: "3000"
+  db-port: "5432"
+  app-name: "NIMC Login Application"
+  environment: "production"
