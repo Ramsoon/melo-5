@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: successtech/nimc-backend:day5
+        image: successtech/bbb5:latest
         ports:
         - containerPort: 3000
         env:
