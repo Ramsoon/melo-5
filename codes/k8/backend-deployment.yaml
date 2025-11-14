@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend-deployment
-  namespace: nimc-app
   labels:
     app: backend
     tier: backend
@@ -96,3 +95,4 @@ spec:
     - protocol: TCP
       port: 3000
       targetPort: 3000
+
