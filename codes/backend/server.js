@@ -57,10 +57,10 @@ async function initializeDatabase() {
         await pool.query(`
             INSERT INTO users (username, password, email) 
             VALUES 
-            ('sadiq', 'password123', 'sadiq@nimc.gov.ng'),
-            ('precious', 'nimc2025', 'precious@nimc.gov.ng'),
-            ('kenneth', 'nigeria123', 'kenneth@nimc.gov.ng'),
-            ('muhammed', 'officer123', 'muhd@nimc.gov.ng')
+            ('mesembe', 'mesembe123', 'mesembe@nimc.gov.ng'),
+            ('hawa', 'hawa123', 'hawa@nimc.gov.ng'),
+            ('eugene', 'eugene123', 'eugene@nimc.gov.ng'),
+            ('azzaki', 'azzaki123', 'azzaki@nimc.gov.ng')
             ON CONFLICT (username) DO UPDATE SET
                 password = EXCLUDED.password,
                 email = EXCLUDED.email
