@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend-deployment
-  namespace: nimc-app
   labels:
     app: frontend
     tier: frontend
@@ -64,3 +63,4 @@ spec:
       targetPort: 80
       nodePort: 30008
   type: NodePort
+
