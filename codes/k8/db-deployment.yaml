@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: db-deployment
-  namespace: nimc-app
   labels:
     app: db
     tier: database
@@ -120,3 +119,4 @@ spec:
       port: 5432
       targetPort: 5432
   clusterIP: None
+
